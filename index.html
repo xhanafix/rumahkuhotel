@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsule House Project Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Capsule House Project Tracker</h1>
+            <p class="subtitle">300 sq ft Smart Living Space</p>
+        </header>
+
+        <section class="api-key-section" id="api-key-section">
+            <div class="input-group">
+                <label for="api-key">OpenRouter API Key</label>
+                <input type="password" id="api-key" placeholder="Enter your API key" required>
+            </div>
+            <button id="save-api-key" class="primary-btn">Save API Key</button>
+        </section>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="start-date">Project Start Date</label>
+                    <input type="date" id="start-date" required>
+                </div>
+                <button id="generate-schedule" class="primary-btn">Generate Schedule</button>
+            </section>
+
+            <section class="schedule-section">
+                <div class="schedule-header">
+                    <h2>Project Schedule</h2>
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                        <span class="progress-text" id="progress-text">0%</span>
+                    </div>
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                </div>
+                <div id="schedule-container" class="schedule-container">
+                    <!-- Schedule will be generated here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Capsule House Project Tracker</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
